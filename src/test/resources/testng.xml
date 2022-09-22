@@ -1,0 +1,8 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Job Application">
+    <test name="Job Application">
+        <classes>
+            <class name="ApplicationTest"/>
+        </classes>
+    </test>
+</suite>
