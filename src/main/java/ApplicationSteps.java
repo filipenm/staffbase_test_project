@@ -16,5 +16,23 @@ public class ApplicationSteps {
     public void acceptCookies() {
         applicationPageObjects.waitForAcceptButton();
         applicationPageObjects.acceptCookies();
+        applicationPageObjects.waitForDisappearAcceptButton();
+    }
+
+    public void fillOutFields() {
+        applicationPageObjects.waitForFields();
+        applicationPageObjects.fillFirstName();
+        applicationPageObjects.fillLastName();
+        applicationPageObjects.fillEmailField();
+        applicationPageObjects.fillPhoneField();
+        applicationPageObjects.clickManualButton();
+        applicationPageObjects.waitForCVField();
+        applicationPageObjects.attachCV();
+        applicationPageObjects.acceptPrivacyPolicy();
+        applicationPageObjects.fillGitHubField();
+    }
+
+    public void submitApplication() {
+        //applicationPageObjects.submitApplication();
     }
 }
